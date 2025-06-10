@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* globales */
 body {
   font-family: "Inter", "Montserrat", "Dancing Script", sans-serif;
   min-height: 100vh;
@@ -23,8 +24,14 @@ body {
   font-family: "Inter", sans-serif;
   color: white;
 }
-
+.dot span {
+  font-size: 100px;
+  line-height: 0;
+  color: greenyellow;
+}
 .button {
+  width: 130px;
+  height: 50px;
   background-color: transparent;
   border: 2px solid greenyellow;
   border-radius: 10px;
@@ -67,14 +74,14 @@ body {
 
 .hero .name h1,
 .hero .name h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   color: white;
   text-align: center;
 }
 
 .hero .name h1 span {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   color: greenyellow;
 }
@@ -107,6 +114,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
+  /*globales*/
+  .dot span {
+      font-size: 120px;
+    }
+
   /*hero*/
   .hero {
     align-items: center;
@@ -118,10 +131,12 @@ body {
 
   .hero .name h1,
   .hero .name h2 {
-    font-size: 30px;}
+    font-size: 40px;
+    text-align: center;
+  }
   
   .hero .name h1 span {
-    font-size: 30px;}
+    font-size: 40px;}
       
   .hero .name p {
     font-size: 16px;
@@ -142,7 +157,12 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  /*globales*/
+  .dot span {
+    font-size: 150px;
+  }
 
+  /*hero*/
   .hero div img {
     width: 100%;
     height: auto;
