@@ -7,7 +7,6 @@
 /* globales */
 body {
   font-family: "Inter", "Montserrat", "Dancing Script", sans-serif;
-  min-height: 100vh;
   background: radial-gradient(
       circle at 20% 30%,
       rgba(0, 255, 204, 0.15) 0%,
@@ -102,15 +101,47 @@ body {
 /* Sobre mi*/
 .about {
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100vh
 }
 .about .container p {
   font-size: 14px;
   font-weight: 300;
+  text-align: center;
 }
 .about .container h2 {
   font-size: 25px;
   font-weight: 500;
+}
+    /* ---> Habilidades */
+    .about .container .col .skill {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      padding: 30px;
+      align-items: center;
+      justify-items: center;
+    }
+
+.about .container .col .skill div {
+  border: 1px solid greenyellow;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.about .container .col .skill div p {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.about .container .col img {
+  width: 70px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -154,9 +185,15 @@ body {
   .about .container h2 {
     font-size: 35px;   }
 
+      /* ---> Habilidades */
+      .about .container .col .skill {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+      }
+
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   /*globales*/
   .dot span {
     font-size: 150px;
@@ -187,8 +224,6 @@ body {
   }
 
   /*sobre mi*/
-  .about {
-    margin-top: 120px; }
 
   .about .container p {
     font-size: 20px;}
@@ -199,5 +234,12 @@ body {
   .about .container {
     padding: 80px;
   }
+
+    /* ---> Habilidades */
+    .about .container .col .skill {
+      grid-template-columns: repeat(4, 150px);
+      grid-template-rows: 1fr;
+      justify-content: center;
+    }
 
 }
