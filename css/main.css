@@ -22,7 +22,13 @@ body {
   background-size: cover;
   font-family: "Inter", sans-serif;
   color: white;
+  padding-top: 90px;
 }
+
+:target {
+  scroll-margin-top: 90px;
+}
+
 .dot span {
   font-size: 100px;
   line-height: 0;
@@ -53,6 +59,13 @@ body {
 .navbar {
   font-family: "Inter", "Montserrat", "Dancing Script", sans-serif;
   font-size: 16px;
+  height: 90px;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
 }
 
 .navbar-toggler {
@@ -62,6 +75,27 @@ body {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23adff2f' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
+.navbar .container div ul li a {
+  margin-right: 15px;
+}
+
+    /* Sidebar*/
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -500px;
+      width: 500px;
+      height: 100vh;
+      background: linear-gradient(to right, transparent 0%, #000000 80%, #000000 100%);
+      color: white;
+      transition: all 0.3s ease;
+      z-index: -1;
+      padding-top: 70px;
+    }
+    .sidebar.active {
+      right: 0;
+    }
 
 /*Hero*/
 
@@ -102,6 +136,7 @@ body {
 .about {
   justify-content: center;
   min-height: 100vh;
+
 }
 .about .container p {
   font-size: 14px;
@@ -184,12 +219,20 @@ body {
   font-size: 14px;
 }
 
+/* Tablet */
 @media screen and (min-width: 768px) {
 
   /*globales*/
+  :target {
+      scroll-margin-top: 100px;
+    }
+
   .dot span {
       font-size: 120px;
     }
+  /*NavBar*/
+  .navbar {
+    height: 100px; }
 
   /*hero*/
   .hero {
@@ -218,7 +261,7 @@ body {
 
     /*sobre mi*/
   .about {
-    padding: 100px 0;
+    padding: 50px 0;
   }
   .about .container p {
     font-size: 16px;
@@ -240,9 +283,14 @@ body {
     font-size: 35px;
   }
 
+  .projects {
+    padding: 50px 0;
+  }
 }
 
+/* Desktop */
 @media screen and (min-width: 992px) {
+
   /*globales*/
   .dot span {
     font-size: 150px;
@@ -281,7 +329,6 @@ body {
     font-size: 40px;}
 
   .about .container {
-    /* solo padding a los lados */
     padding: 0 80px;
   }
 
