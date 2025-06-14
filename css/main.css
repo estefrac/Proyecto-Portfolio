@@ -29,13 +29,13 @@ body {
   color: greenyellow;
 }
 .button {
-  width: 130px;
-  height: 50px;
+  width: 120px;
+  height: 38px;
   background-color: transparent;
   border: 2px solid greenyellow;
   border-radius: 10px;
-  padding: 10px;
-  font-size: 15px;
+  padding: 8px;
+  font-size: 12px;
   font-weight: bold;
   color: greenyellow;
   cursor: pointer;
@@ -44,15 +44,15 @@ body {
 
 .button:hover {
   background-color: greenyellow;
+  border: 2px solid greenyellow;
   color: black;
-  transform: translateY(-2px);
 }
 
 /* NavBar */
 
 .navbar {
   font-family: "Inter", "Montserrat", "Dancing Script", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .navbar-toggler {
@@ -101,7 +101,7 @@ body {
 /* Sobre mi*/
 .about {
   justify-content: center;
-  min-height: 100vh
+  min-height: 100vh;
 }
 .about .container p {
   font-size: 14px;
@@ -123,25 +123,65 @@ body {
       justify-items: center;
     }
 
-.about .container .col .skill div {
-  border: 1px solid greenyellow;
+    .about .container .col .skill div {
+      border: 1px solid greenyellow;
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .about .container .col .skill div p {
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+    }
+
+    .about .container .col img {
+      width: 70px;
+      height: auto;
+    }
+
+/* Proyectos */
+.projects h2 {
+  font-size: 25px;
+}
+.projects {
+      justify-content: center;
+      min-height: 100vh 
+}
+
+.projects .container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.projects .container .card {
+  width: 320px;
+  background-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
   border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  text-align: center;
-  align-items: center;
 }
 
-.about .container .col .skill div p {
-  font-size: 16px;
-  font-weight: 500;
+.projects .container .card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+
+.projects .container .card-title {
+  color: greenyellow;
+  font-weight: 700;
+}
+
+.projects .container .card-text {
   color: white;
-}
-
-.about .container .col img {
-  width: 70px;
-  height: auto;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -177,6 +217,9 @@ body {
   }
 
     /*sobre mi*/
+  .about {
+    padding: 100px 0;
+  }
   .about .container p {
     font-size: 16px;
     font-weight: 300;
@@ -187,9 +230,15 @@ body {
 
       /* ---> Habilidades */
       .about .container .col .skill {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
       }
+
+  /* Proyectos */  
+  .projects h2 {
+    font-size: 35px;
+  }
 
 }
 
@@ -232,7 +281,8 @@ body {
     font-size: 40px;}
 
   .about .container {
-    padding: 80px;
+    /* solo padding a los lados */
+    padding: 0 80px;
   }
 
     /* ---> Habilidades */
@@ -241,5 +291,10 @@ body {
       grid-template-rows: 1fr;
       justify-content: center;
     }
+
+  /* Proyectos */
+  .projects h2 {
+    font-size: 40px;
+  }
 
 }
