@@ -25,8 +25,8 @@ body {
   padding-top: 90px;
 }
 
-:target {
-  scroll-margin-top: 90px;
+section {
+  scroll-margin-top: 100px;
 }
 
 .dot span {
@@ -277,9 +277,9 @@ width: 320px;
 @media screen and (min-width: 768px) {
 
   /*globales*/
-  :target {
-      scroll-margin-top: 100px;
-    }
+  section {
+    scroll-margin-top: 100px;
+  }
 
   .dot span {
       font-size: 120px;
@@ -346,7 +346,7 @@ width: 320px;
       }
 
       .project .container .description h1 {
-        font-size: 25px;
+        font-size: 30px;
       }
       .project .container .description p {
         font-size: 16px;
@@ -361,6 +361,10 @@ width: 320px;
 @media screen and (min-width: 992px) {
 
   /*globales*/
+  section {
+    scroll-margin-top: 100px;
+  }
+
   .dot span {
     font-size: 150px;
   }
@@ -428,6 +432,16 @@ width: 320px;
         font-size: 18px;
         font-weight: 600;
       }
+      .project .container .description h1 {
+        font-size: 22px;
+        font-weight: 700;
+        color: greenyellow;
+     }
+
+      .project .container .description h1 {
+        font-size: 40px;
+      }
+
       .project .container .mockup img {
         width: 80%;
     }
