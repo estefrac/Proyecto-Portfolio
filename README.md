@@ -1,5 +1,4 @@
-# Proyecto CoderHouse Portfolio Personal
-
+# PROYECTO CODERHOUSE PORTFOLIO PERSONAL
 # Entrega 2 – Desarrollo Web Avanzado
 
 Este proyecto forma parte de una entrega práctica para aplicar conocimientos avanzados de estructura web, estilización con CSS y control de versiones con Git y GitHub. El objetivo es construir una página web desde cero, organizando correctamente el contenido y el código, y asegurando buenas prácticas de desarrollo.
