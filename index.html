@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio - Esteban Sebastian Fraccascia</title>
+    <title>Portfolio | Esteban Sebastian Fraccascia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body id="body">
+  <body id="hero">
     <main class="main">
       <!--Encabezado-->
       <header>
@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link text-white text-end" href="#body"
+                  <a class="nav-link text-white text-end" href="#hero"
                     >Inicio</a
                   >
                 </li>
@@ -67,12 +67,9 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white text-end" href="#"
-                    >Certificados</a
+                  <a class="nav-link text-white text-end" href="#contact"
+                    >Contacto</a
                   >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white text-end" href="#">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -165,7 +162,9 @@
                 Sitio web para Las Acacias Urbanización. Maquetación responsiva
                 y presentación limpia del contenido.
               </p>
-              <a href="#" class="btn btn-primary button">ver proyecto</a>
+              <a href="lasacacias.html" class="btn btn-primary button"
+                >ver proyecto</a
+              >
             </div>
           </div>
           <div class="card">
@@ -199,6 +198,43 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contact" id="contact">
+        <h2 class="mb-3 dot text-center">Contacto<span>.</span></h2>
+        <form>
+          <div class="container mt-3">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Tu nombre"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="tu@email.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                placeholder="Escribe tu mensaje aquí"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="button">Enviar</button>
+          </div>
+        </form>
       </section>
 
       <!-- Footer -->
