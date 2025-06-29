@@ -1,0 +1,16 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    height: 100vh;
+    background: linear-gradient(to right, transparent 0%, #000000 80%, #000000 100%);
+    color: $color-texto;
+    transition: all 0.3s ease;
+    z-index: -1;
+    padding-top: 70px;
+
+    &.active {
+        right: 0;
+    }
+}

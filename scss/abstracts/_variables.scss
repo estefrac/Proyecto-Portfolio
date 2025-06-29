@@ -1,0 +1,25 @@
+// Colores
+$color-principal: greenyellow;
+$color-fondo:black;
+$color-texto:white;
+$color-radial-body: rgba(0, 255, 204, 0.15);
+$color-hover-submenu: #85e771;
+
+// Tipografía
+$fuente-principal: "Inter",
+"Montserrat",
+"Dancing Script",
+sans-serif;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+// Variables generales
+$height-navbar: 90px;
+$height-navbar-lg: 100px;
+$border-radius: 10px;
+$border-radius-lg: 20px;
+$box-shadow-card: 0 4px 12px rgba(0, 255, 0, 0.1);
+$transition: all 0.3s ease;
+

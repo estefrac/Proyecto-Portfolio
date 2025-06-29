@@ -1,0 +1,18 @@
+body {
+    font-family: $fuente-principal;
+    background: radial-gradient(circle at 20% 30%,
+            $color-radial-body 0%,
+            transparent 50%),
+        radial-gradient(circle at 80% 70%,
+            $color-radial-body 0%,
+            transparent 50%);
+    background-color: $color-fondo;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-texto;
+    padding-top: 90px;
+}
+
+section {
+    scroll-margin-top: 100px;
+}

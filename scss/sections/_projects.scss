@@ -1,0 +1,37 @@
+.projects {
+    justify-content: center;
+    min-height: 100vh;
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .container {
+        @include flex(center, center);
+        margin-top: 50px;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .card {
+            width: 320px;
+            background-color: transparent;
+            box-shadow: $box-shadow-card;
+            border-radius: $border-radius-lg;
+        }
+
+        .card-img-top {
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-title {
+            color: $color-principal;
+            font-weight: 700;
+        }
+
+        .card-text {
+            color: $color-texto;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+}

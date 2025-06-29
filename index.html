@@ -16,7 +16,6 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -32,7 +31,7 @@
           <div class="container">
             <a class="navbar-brand" href="#">
               <img
-                src="assets/logo.svg"
+                src="../assets/logo.svg"
                 alt="Bootstrap"
                 width="50"
                 height="auto"
@@ -58,12 +57,16 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white text-end" href="#about"
+                  <a
+                    class="nav-link text-white text-end"
+                    href="../index.html#about"
                     >Sobre Mí</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white text-end" href="#projects"
+                  <a
+                    class="nav-link text-white text-end"
+                    href="../index.html#projects"
                     >Proyectos</a
                   >
                 </li>
@@ -83,21 +86,11 @@
       <section class="hero">
         <div class="container my-3 my-md-5">
           <div class="row">
-            <div
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              class="col-lg-5 text-center order-1 order-lg-2"
-            >
+            <div class="col-lg-5 text-center order-1 order-lg-2">
               <img src="assets/yo.png" alt="Esteban Fraccascia" />
             </div>
             <div class="col-lg-7 order-2 order-lg-1 align-self-lg-center">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                class="name"
-              >
+              <div class="name">
                 <h1>Hola, soy <span>Esteban Fraccascia</span></h1>
                 <h2>Desarrollador Web Frontend</h2>
                 <p>
@@ -120,14 +113,7 @@
       </section>
 
       <!-- Sobre mi -->
-      <section
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
-        class="about"
-        id="about"
-      >
+      <section class="about" id="about">
         <div class="container">
           <div class="row flex-column gap-3">
             <div class="col">
@@ -168,14 +154,7 @@
       </section>
 
       <!-- Proyectos -->
-      <section
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
-        class="projects"
-        id="projects"
-      >
+      <section class="projects" id="projects">
         <h2 class="mb-3 dot text-center">Proyectos<span>.</span></h2>
         <div class="container">
           <div class="card">
@@ -233,12 +212,7 @@
       </section>
 
       <!-- Contacto -->
-      <section
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        class="contact"
-        id="contact"
-      >
+      <section class="contact" id="contact">
         <h2 class="mb-3 dot text-center">Contacto<span>.</span></h2>
         <form>
           <div class="container mt-3">
@@ -292,9 +266,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

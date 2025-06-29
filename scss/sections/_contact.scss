@@ -1,0 +1,28 @@
+.contact {
+    min-height: 60vh;
+    margin-top: 100px;
+
+    form {
+        .container {
+            width: 320px;
+
+            input,
+            textarea {
+                background-color: transparent;
+                border: 1px solid $color-principal;
+                border-radius: $border-radius;
+                color: $color-texto;
+
+                &::placeholder {
+                    color: rgb(126, 128, 124);
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 5px $color-principal;
+                    color: $color-texto;
+                }
+            }
+        }
+    }
+}

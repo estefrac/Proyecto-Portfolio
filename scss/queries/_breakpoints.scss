@@ -1,0 +1,213 @@
+// Tablet
+@media screen and (min-width: $breakpoint-tablet) {
+
+    section {
+        scroll-margin-top: 100px;
+    }
+
+    .dot span {
+        font-size: 120px;
+    }
+
+    .navbar {
+        height: $height-navbar-lg;
+    }
+
+    .hero {
+
+        div {
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 300px;
+            }
+        }
+
+        .name {
+            h1 {
+                @include title-hero(40px, 500, $color-texto, center);
+
+                span {
+                    font-size: 40px;
+                }
+            }
+
+            h2 {
+                @include title-hero(40px,
+                    500,
+                    $color-texto,
+                    center);
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 300;
+                padding-right: 90px;
+                padding-left: 90px;
+            }
+        }
+    }
+
+    .about {
+        padding: 30px 0;
+
+        .container {
+            p {
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            h2 {
+                font-size: 35px;
+            }
+
+            .col {
+                .skill {
+                    @include grid(200px 200px, 1fr 1fr, 20px);
+                }
+            }
+
+        }
+    }
+
+    .projects {
+        padding: 50px 0;
+
+        h2 {
+            font-size: 35px;
+        }
+    }
+
+    .project {
+        .container {
+            .description {
+                padding: 0 35px;
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        form {
+            .container {
+                width: 500px;
+            }
+        }
+    }
+
+}
+
+// Desktop
+@media screen and (min-width: $breakpoint-desktop) {
+    section {
+        scroll-margin-top: 100px;
+    }
+
+    .dot span {
+        font-size: 150px;
+    }
+
+    .hero {
+
+        div {
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 339px;
+            }
+        }
+
+        .name {
+            h1 {
+                @include title-hero(40px, 500, $color-texto, left);
+
+                span {
+                    font-size: 40px;
+                }
+            }
+
+            h2 {
+                @include title-hero(40px, 500, $color-texto, left);
+            }
+
+            p {
+                font-size: 20px;
+                text-align: left;
+                padding-left: 0;
+                padding-right: 100px;
+            }
+        }
+    }
+
+    .about {
+        .container {
+            padding: 0 80px;
+    
+            p {
+                font-size: 20px;
+            }
+    
+            h2 {
+                font-size: 40px;
+            }
+    
+            .col {
+                .skill {
+                    @include grid(repeat(4, 150px), 1fr, 20px);
+                }
+            }
+        }
+    }
+
+    .projects {
+        h2 {
+            font-size: 40px;
+        }
+    }
+    
+    .project {
+        .container {
+            min-height: calc(100vh - $height-navbar-lg);
+            flex-direction: row;
+    
+            .description {
+                width: 60%;
+                min-width: 400px;
+    
+                p {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+    
+                h1 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: $color-principal;
+                }
+            }
+    
+            .mockup {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    
+    .custom-dropdown-menu {
+        background: rgba(0, 0, 0, 0.6);
+        padding-right: 20px;
+    }
+
+    .contact {
+        margin-top: 50px;
+    }
+
+}

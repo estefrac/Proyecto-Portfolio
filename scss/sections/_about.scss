@@ -1,0 +1,46 @@
+.about {
+    justify-content: center;
+    min-height: 100vh;
+
+    .container {
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .col {
+            img {
+                width: 70px;
+                height: auto;
+            }
+
+            .skill {
+                @include grid(1fr 1fr, 1fr 1fr, 20px);
+                padding: 30px;
+                align-items: center;
+
+                div {
+                    border: 1px solid $color-principal;
+                    border-radius: $border-radius-lg;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    text-align: center;
+                    align-items: center;
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $color-texto;
+                    }
+                }
+            }
+        }
+    }
+}

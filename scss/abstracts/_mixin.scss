@@ -1,0 +1,20 @@
+@mixin title-hero ($font-size, $font-weight, $color, $text-align) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    text-align: $text-align;
+}
+
+@mixin grid ($columns, $rows, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+    justify-content: center;
+}
+
+@mixin flex ($align-items, $justify-content) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content ;
+}
