@@ -1,3 +1,4 @@
+/* Estilos sección hero */
 .hero {
     @include flex(center, center);
     min-height: calc(100vh - 90px);

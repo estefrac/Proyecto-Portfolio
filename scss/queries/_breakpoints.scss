@@ -1,4 +1,5 @@
-// Tablet
+/* Breakpoints */
+/* Tablet */
 @media screen and (min-width: $breakpoint-tablet) {
 
     section {
@@ -104,7 +105,7 @@
 
 }
 
-// Desktop
+/* Desktop */
 @media screen and (min-width: $breakpoint-desktop) {
     section {
         scroll-margin-top: 100px;
