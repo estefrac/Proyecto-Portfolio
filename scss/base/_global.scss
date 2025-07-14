@@ -1,4 +1,9 @@
 /* Estilos globales */
+
+@view-transition {
+    navigation: auto;
+}
+
 body {
     font-family: $fuente-principal;
     background: radial-gradient(circle at 20% 30%,
